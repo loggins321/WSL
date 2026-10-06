@@ -38,6 +38,7 @@ paket_install() {
     #nuls # optional
     starship
     zoxide
+    yt-dlp
   )
   for data in "${packages[@]}"; do
     yay -S "${data}" --needed --noconfirm --sudoloop
