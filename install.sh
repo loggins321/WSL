@@ -18,14 +18,13 @@ path="$HOME/installer"
 source "$path/modules/paket.sh"
 source "$path/modules/zsh.sh"
 source "$path/modules/pyinstall.sh"
+source "$path/config/config-files.sh"
 
 paket_install
 zsh
 py_install
+config_files
 
 #install lazyvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
-
-cp -r "$HOME/installer/config/kitty" "$HOME/.config"
-cp "$HOME/installer/config/starship.toml" "$HOME/.config"
