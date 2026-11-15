@@ -6,7 +6,7 @@ paket_install() {
   sleep 1
   local packages=(
     git
-    wget
+    # wget
     curl
     aria2
     bat
@@ -30,7 +30,9 @@ paket_install() {
     rsync
     ttf-jetbrains-mono-nerd
     ttf-jigmo
+    ttf-roboto-mono-nerd
     pastel
+    stow
     ttf-sazanami
     unzip
     zsh
