@@ -44,7 +44,7 @@ paket_install() {
     yt-dlp
     mesa
     libva-mesa-driver
-    pipewire
+    tealdeer
   )
   for data in "${packages[@]}"; do
     yay -S "${data}" --needed --noconfirm --sudoloop
