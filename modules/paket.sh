@@ -30,6 +30,7 @@ paket_install() {
     rsync
     ttf-jetbrains-mono-nerd
     ttf-jigmo
+    pastel
     ttf-sazanami
     unzip
     zsh
@@ -39,6 +40,9 @@ paket_install() {
     starship
     zoxide
     yt-dlp
+    mesa
+    libva-mesa-driver
+    pipewire
   )
   for data in "${packages[@]}"; do
     yay -S "${data}" --needed --noconfirm --sudoloop
