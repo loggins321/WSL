@@ -15,9 +15,17 @@ zsh() {
     echo "Mengganti shell ke zsh"
     sleep 1
     chsh -s /usr/bin/zsh
-   else
+  else
     echo "Shell sudah zsh"
   fi
 
-  cp "$HOME/installer/.zshrc" "$HOME"
+  # cek .zshrc bawaan ada atau tidak. kalau ada ganti yang baru
+  chk=$(ls -a "$HOME/.zshrc" | awk -F '/' '{print $4}')
+
+  if [[ $chk == ".zshrc" ]]; then
+    rm "$HOME/.zshrc"
+    stow -d "$HOME/WSL/wsl-setup" -t "$HOME" "zsh"
+  else
+    stow -d "$HOME/WSL/wsl-setup" -t "$HOME" "zsh"
+  fi
 }
