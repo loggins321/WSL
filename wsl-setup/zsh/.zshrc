@@ -24,7 +24,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 alias reload="source ~/.zshrc"
 alias icat="kitty kitten +icat"
 alias cat="bat"
-alias ls="eza -lh --icons=always"
+alias ls="eza -lh --icons=always --git"
 alias cpd="cd /mnt/c/Users/Regustia/Downloads/Compressed"
 alias aa="source ~/.env/bin/activate"
 alias mp3="yt-dlp -t mp3 --no-playlist"
